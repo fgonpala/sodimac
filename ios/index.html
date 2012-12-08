@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+            Shopping de Precios
+        </title>
+        <link rel="stylesheet" href="css/jquery.mobile-1.1.1.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>            	
+            .nav-glyphish-example .ui-btn .ui-btn-inner { padding-top: 40px !important; }
+            .nav-glyphish-example .ui-btn .ui-icon { width: 30px!important; height: 30px!important; margin-left: -15px !important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; border-radius: 0 !important; }
+            #chat .ui-icon { background:  url(glyphish-icons/09-chat2.png) 50% 50% no-repeat; background-size: 24px 22px; }
+            #email .ui-icon { background:  url(glyphish-icons/18-envelope.png) 50% 50% no-repeat; background-size: 24px 16px;  }
+            #login .ui-icon { background:  url(glyphish-icons/30-key.png) 50% 50% no-repeat;  background-size: 12px 26px; }
+            #beer .ui-icon { background:  url(glyphish-icons/88-beermug.png) 50% 50% no-repeat;  background-size: 22px 27px; }
+            #coffee .ui-icon { background:  url(glyphish-icons/100-coffee.png) 50% 50% no-repeat;  background-size: 20px 24px; }
+            #skull .ui-icon { background:  url(glyphish-icons/21-skull.png) 50% 50% no-repeat;  background-size: 22px 24px; }
+          
+        </style>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.mobile-1.1.1.min.js"></script>       
+            
+        <script type="text/javascript" src="cordova-2.0.0.js"></script> 
+        <script src="my.js"></script>
+        <script src="js/data/script.js"></script>       
+    </head>
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page1">            
+            <div data-theme="b" data-role="header">
+                <h3>
+                    SODIMAC
+                </h3>
+            </div>
+			
+            <div data-role="content" style="padding: 15px">
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        Sopping de Precios
+                    </li>
+                    <li data-theme="c" data-icon="refresh">
+                        <a href="itms-services://?action=download-manifest&url=http://110.254.11.223:8081/ios/shoppingprice.plist" data-transition="slide">IOS</a>    
+                    </li>
+                    <li data-theme="c" data-icon="refresh">
+                        <a href="ShoppingDePrecios.apk" data-transition="slide" data-ajax="false">Android</a>    
+                    </li>              
+                </ul>  
+                
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        Consulta de Precios
+                    </li>
+                    <li data-theme="c" data-icon="refresh">
+                        <a href="itms-services://?action=download-manifest&url=http://110.254.11.223:8081/ios/toolbox/ConsultaPreciosSodimac.plist" data-transition="slide">IOS</a>    
+                    </li>
+                    <li data-theme="c" data-icon="refresh">
+                        <a href="toolbox/SodimacToolBox.apk" data-transition="slide" data-ajax="false">Android</a>    
+                    </li>                    
+                </ul>      
+            </div>	  
+        </div>  
+    </body>
+</html>
